@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+  .resize {
+  border-radius: 50%;
+  width: 200px;
+  height: auto; 
+} 
+</style>
 </head>
+<script>
+    
+    // var car = {
+    //     model:'',
+    //     color: '',
+    //     engine: [{
+    //         type: 'hybrid',
+    //         torque: 528,
+    //         engineModel: {
+    //             type: 'v8'
+    //         }
+    //     }]
+    // };
+    // console.log(car.engine[0]);
+
+    // var list = [];
+    // list.push(1);
+    // list.push(2);
+    // list.push(3);
+    
+    // list.push(5);
+    // list.push(5);
+    // list.push(5);
+
+    // list.push(6);
+    // const ind = list.filter(v => v===5);
+    // console.log(ind);
+    var profile = {
+        firstName: 'Manoj',
+        lastName: 'Barugu',
+        dateOfBirth: '10.06.1997',
+        birthPlace: 'Hyderabad',
+        phoneNumber: 9010260968,
+        Address: [{
+            streetNo: '3110 westview Dr',
+            city: 'Mckinney',
+            state: 'Texas',
+            zipcode: 75070,           
+        }],
+        Master: 'Applied computer Science',
+        Gpa: 3.77,
+        univeristy: 'Northwest Missouri State University',
+        skills: ['React', 'Java', 'python', 'Javascript'],
+        Hobbies: [
+            {sports : ['cricket','football'] },
+            'readingbooks', 'listiningSongs', 'videoGames'
+            // readingBooks: ['Sherlock Holmes','The Great Indian Novel'],
+            // music: ['English', 'Telugu', 'Hindi']       
+            
+        ]
+        
+    };
+    //console.log(profile.Hobbies[0].music[2]);
+    console.log(profile.Hobbies[3]);
+
+   // document.getElementById("greeting").innerHTML = 'Manoj Kumar Barugu'
+
+</script>
 <body>
+    <img class="resize" src="95.JPEG"/>
     <h1>
         Welcome to JAVA
     </h1>
     <div>
+        <!-- <p id="greeting" > </p> -->
         <p>Hello Manoj Kumar Barugu</p>
     </div>
     

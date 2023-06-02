@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+</style>
+</head>
+<script>
+    
+//    if([].length){
+//     console.log(10);
+//    }else{
+//     console.log(30);
+//    }
+// console.log(20);
+// const y =[];
+// if(y){
+// y.forEach(v => console.log(z));
+// }else if(true){
+//     console.log(40);
+// }else{
+//     console.log(30);
+// }
+// console.log(20);
+
+let environments = ['dev', 'test', 'stage', 'prod'];
+
+let sendingAmount = 100;
+let amount;
+
+// switch(environments[0]){
+//     case 'dev':
+//         console.log(amount = sendingAmount + 10);
+//         break;
+//     case 'test':
+//         console.log(amount = sendingAmount + 20)
+//         break;
+//     case 'stage':
+//         console.log(amount = sendingAmount + 30)
+//         break;
+//     case 'prod':
+//         console.log(amount = sendingAmount + 5)
+//         break;
+    
+//     default:
+//         console.log("Did not match with any environment")
+//             break;
+// }
+
+
+for(i=0; i<=environments.length-1; i++){
+if (environments[i] == 'dev'){
+     amount = sendingAmount+10;
+    console.log(amount);
+}
+else if (environments[i] == 'test'){
+     amount = sendingAmount+20;
+    console.log(amount);
+}
+else if (environments[i] == 'stage'){
+     amount = sendingAmount+30;
+    console.log(amount);
+}
+else if (environments[i] == 'prod'){
+     amount = sendingAmount+5;
+    console.log(amount);
+}else{
+    console.log('Nomatches');
+}
+
+}
+
+
+// environments.forEach(environment => {
+//     if (environment[0] == 'dev'){
+//      amount = sendingAmount+10;
+//     console.log(amount);
+// }
+// else if (environment[1] == 'test'){
+//      amount = sendingAmount+20;
+//     console.log(amount);
+// }
+// else if (environment[2] == 'stage'){
+//      amount = sendingAmount+30;
+//     console.log(amount);
+// }
+// else if (environment[3] == 'prod'){
+//      amount = sendingAmount+5;
+//     console.log(amount);
+// }else{
+//     console.log('Nomatches');
+// }
+
+// });
+
+</script>
+<body>
+    
+    <h1>
+        Welcome to JAVA
+    </h1>
+    <div>
+        <!-- <p id="greeting" > </p> -->
+        <p>Hello Manoj Kumar Barugu</p>
+    </div>
+    
+</body>
+</html>

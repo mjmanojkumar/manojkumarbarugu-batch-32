@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manoj Hobbies Page</title>
+</head>
+<script>
+profile = {
+        firstName: 'Manoj',
+        lastName: 'Barugu',
+        dateOfBirth: '10.06.1997',
+        birthPlace: 'Hyderabad',
+        phoneNumber: 9010260968,
+        Address: [{
+            streetNo: '3110 westview Dr',
+            city: 'Mckinney',
+            state: 'Texas',
+            zipcode: 75070,           
+        }],
+        Master: 'Applied computer Science',
+        Gpa: 3.77,
+        univeristy: 'Northwest Missouri State University',
+        skills: ['React', 'Java', 'python', 'Javascript'],
+        Hobbies: ['cricket', 'readingbooks', 'videogames', 'parties', 'Coding', 'singing', 'rummy'],
+        hobby(){
+            return this.Hobbies
+        },
+        newhobby(){
+            this.Hobbies.push('dance');
+            return this.Hobbies;
+        },
+        deleteHobby(){
+            this.Hobbies.pop('dance');
+            return this.Hobbies
+        }
+        }
+        console.log(profile.hobby());
+        console.log(profile.newhobby());
+        console.log(profile.deleteHobby());
+
+</script>
+<body>
+    
+</body>
+</html>

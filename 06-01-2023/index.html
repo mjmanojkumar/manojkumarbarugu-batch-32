@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html lang="en">
@@ -110,4 +111,69 @@ else if (environments[i] == 'prod'){
     </div>
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let environments = ['dev', 'test', 'stage', 'prod'];
+    let amount = 100
+    let sendingAmount;
+
+
+switch (environments[2]) {
+    case 'dev':
+        console.log(sendingAmount = amount + 10);
+        break;
+    case 'test':
+        console.log(sendingAmount = amount + 20);
+        break;
+    case 'stage':
+        console.log(sendingAmount = amount + 30);
+        break;
+    case 'prod':
+        console.log(sendingAmount = amount + 5);
+        break;
+
+    default:
+        console.log('No Matches')
+        break;
+}
+
+
+for(i=0; i<=environments.length-1; i++){
+    if(environments[i] == 'dev'){
+        sendingAmount = amount + 10;
+        console.log(sendingAmount);
+    }
+    else if(environments[i] == 'test'){
+        sendingAmount = amount + 20;
+        console.log(sendingAmount);
+    }
+    else if(environments[i] == 'stage'){
+        sendingAmount = amount + 30;
+        console.log(sendingAmount);
+    }
+    else if(environments[i] == 'prod'){
+        sendingAmount = amount + 5;
+        console.log(sendingAmount);
+    }else{
+        console.log('No Matches');
+    }
+}
+</script>
+<body>
+    <h1>
+        Manoj Kumar Barugu
+    </h1>
+    <p>
+        Hello Everyone!
+    </p>
+</body>
+>>>>>>> a0f989660d75b6c19213e029cfea612596129a7e
 </html>

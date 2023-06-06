@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+<div id = 'root'>
+    <label >FirstName: </label>
+    <input type = 'text'id = 'f' value = ''/>
+</div>
+<div id = 'root1'>
+    <label >LastName: </label>
+    <input type = 'text' id = 'l' value = ''/>
+</div>
+<div id = 'root2'>
+    <label >DOB: </label>
+    <input type = 'text' id = 'd' value = ''/>
+</div>
+<div id = 'root3'>
+    <label >email: </label>
+    <input type = 'text' id = 'e' value = ''/>
+</div>
+<div id = 'root4'>
+    <label >Phonenumber: </label>
+    <input type = 'text' id = 'p' value = ''/>
+</div>
+<div id = 'root5'>
+    <label >University: </label>
+    <input type = 'text' id = 'u' value = ''/>
+</div>
+<div id = 'root6'>
+    <label >GPA: </label>
+    <input type = 'text' id = 'g' value = ''/>
+</div>
+
+
+    <button onClick = submitButton()>Submit</button>
+
+    <script>
+        function submitButton(){
+        document.getElementById('root').innerHTML = document.getElementById('f').value
+        document.getElementById('root1').innerHTML = document.getElementById('l').value
+        document.getElementById('root2').innerHTML = document.getElementById('d').value
+        document.getElementById('root3').innerHTML = document.getElementById('e').value
+        document.getElementById('root4').innerHTML = document.getElementById('p').value
+        document.getElementById('root5').innerHTML = document.getElementById('u').value
+        document.getElementById('root6').innerHTML = document.getElementById('g').value
+        }
+    
+    </script>
+    
+</body>
+</html>
+
+
+<!-- Assignment : display input fields for all your profile information 
+FN, LN, DOB, email , phone number etc with submit button , on click of submit display all values in Dom -->

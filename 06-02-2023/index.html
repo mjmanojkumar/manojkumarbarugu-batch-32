@@ -23,22 +23,48 @@ profile = {
         Gpa: 3.77,
         univeristy: 'Northwest Missouri State University',
         skills: ['React', 'Java', 'python', 'Javascript'],
-        Hobbies: ['cricket', 'readingbooks', 'videogames', 'parties', 'Coding', 'singing', 'rummy'],
-        hobby(){
-            return this.Hobbies
-        },
-        newhobby(){
+        // Hobbies: ['cricket', 'readingbooks', 'videogames', 'parties', 'Coding', 'singing', 'rummy'],
+        // hobby(){
+        //     return this.Hobbies
+        // },
+        // newhobby(){
+        //     this.Hobbies.push('dance');
+        //     return this.Hobbies;
+        // },
+        // deleteHobby(){
+        //     this.Hobbies.pop('dance');
+        //     return this.Hobbies
+        // }
+        }
+        // console.log(profile.hobby());
+        // console.log(profile.newhobby());
+        // console.log(profile.deleteHobby());
+
+
+        var Hobbies = ['cricket', 'readingbooks', 'videogames', 'parties', 'Coding', 'singing', 'rummy'];
+        
+        function hobby(){
+            return this.Hobbies;
+        }
+        function newhobby(){
             this.Hobbies.push('dance');
             return this.Hobbies;
-        },
-        deleteHobby(){
-            this.Hobbies.pop('dance');
-            return this.Hobbies
         }
-        }
-        console.log(profile.hobby());
-        console.log(profile.newhobby());
-        console.log(profile.deleteHobby());
+        function deleteHobby(){
+            //  this.Hobbies.indexOf(2);
+            // return this.Hobbies
+            if (Hobbies[0] === 'cricket') {
+    // Removes the value from the original array
+        Hobbies.splice(0, 1);
+        return Hobbies;
+    }
+    return Hobbies;
+}
+        
+        
+         console.log(hobby());
+        console.log(newhobby());
+        console.log(deleteHobby());
 
 </script>
 <body>

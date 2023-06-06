@@ -6,48 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body></body>
-<div id = 'root'>
+<body>
+    <h1>My Profile</h1>
+<div>
     <label >FirstName: </label>
     <input type = 'text'id = 'f' value = ''/>
 </div>
-<div id = 'root1'>
+<div>
     <label >LastName: </label>
     <input type = 'text' id = 'l' value = ''/>
 </div>
-<div id = 'root2'>
+<div>
     <label >DOB: </label>
     <input type = 'text' id = 'd' value = ''/>
 </div>
-<div id = 'root3'>
+<div>
     <label >email: </label>
     <input type = 'text' id = 'e' value = ''/>
 </div>
-<div id = 'root4'>
+<div>
     <label >Phonenumber: </label>
     <input type = 'text' id = 'p' value = ''/>
 </div>
-<div id = 'root5'>
+<div>
     <label >University: </label>
     <input type = 'text' id = 'u' value = ''/>
 </div>
-<div id = 'root6'>
+<div>
     <label >GPA: </label>
     <input type = 'text' id = 'g' value = ''/>
 </div>
 
-
     <button onClick = submitButton()>Submit</button>
-
+<p id = 'r'> </p>
+<p id = 'r1'> </p>
+<p id = 'r2'> </p>
+<p id = 'r3'> </p>
+<p id = 'r4'> </p>
+<p id = 'r5'> </p>
+<p id = 'r6'> </p>
+</body>
     <script>
         function submitButton(){
-        document.getElementById('root').innerHTML = document.getElementById('f').value
-        document.getElementById('root1').innerHTML = document.getElementById('l').value
-        document.getElementById('root2').innerHTML = document.getElementById('d').value
-        document.getElementById('root3').innerHTML = document.getElementById('e').value
-        document.getElementById('root4').innerHTML = document.getElementById('p').value
-        document.getElementById('root5').innerHTML = document.getElementById('u').value
-        document.getElementById('root6').innerHTML = document.getElementById('g').value
+        document.getElementById('r').innerHTML = document.getElementById('f').value
+        document.getElementById('r1').innerHTML = document.getElementById('l').value
+        document.getElementById('r2').innerHTML = document.getElementById('d').value
+        document.getElementById('r3').innerHTML = document.getElementById('e').value
+        document.getElementById('r4').innerHTML = document.getElementById('p').value
+        document.getElementById('r5').innerHTML = document.getElementById('u').value
+        document.getElementById('r6').innerHTML = document.getElementById('g').value
         }
     
     </script>
@@ -57,4 +64,4 @@
 
 
 <!-- Assignment : display input fields for all your profile information 
-FN, LN, DOB, email , phone number etc with submit button , on click of submit display all values in Dom -->
+FN, LN, DOB, email , phone number etc with submit button , on click of submit display all values in Dom --> 

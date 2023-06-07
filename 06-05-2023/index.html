@@ -10,7 +10,7 @@
     <h1>My Profile</h1>
 <div>
     <label >FirstName: </label>
-    <input type = 'text'id = 'f' value = ''/>
+    <input type = 'text' id = 'f' value = ''/>
 </div>
 <div>
     <label >LastName: </label>
@@ -18,11 +18,11 @@
 </div>
 <div>
     <label >DOB: </label>
-    <input type = 'text' id = 'd' value = ''/>
+    <input type = 'date' id = 'd' value = ''/>
 </div>
 <div>
     <label >email: </label>
-    <input type = 'text' id = 'e' value = ''/>
+    <input type = 'email' id = 'e' value = ''/>
 </div>
 <div>
     <label >Phonenumber: </label>
@@ -36,27 +36,53 @@
     <label >GPA: </label>
     <input type = 'text' id = 'g' value = ''/>
 </div>
-
-    <button onClick = submitButton()>Submit</button>
-<p id = 'r'> </p>
-<p id = 'r1'> </p>
-<p id = 'r2'> </p>
-<p id = 'r3'> </p>
-<p id = 'r4'> </p>
-<p id = 'r5'> </p>
-<p id = 'r6'> </p>
+<div>
+    <label >Hobbies: </label>
+    <input type = 'checkbox' id = 'c' value = "Cricket" />Cricket
+    <input type = 'checkbox' id = 'v' value="VolleyBall"/>VolleyBall
+    <input type = 'checkbox' id = 'b' value="BasketBall"/>BasketBall
+    <input type = 'checkbox' id = 'r' value="ReadingBooks"/>ReadingBooks
+</div>
+    <button type="submit" onClick = submitButton()>Submit</button>
+<div id = 'r'> </div>
+<div id = 'r1'> </div>
+<div id = 'r2'> </div>
+<div id = 'r3'> </div>
+<div id = 'r4'> </div>
+<div id = 'r5'> </div>
+<div id = 'r6'> </div>
+<div id = 'r7'> </div>
+<div id = 'r8'> </div>
+<div id = 'r9'> </div>
+<div id = 'r10'> </div>
 </body>
     <script>
         function submitButton(){
-        document.getElementById('r').innerHTML = document.getElementById('f').value
-        document.getElementById('r1').innerHTML = document.getElementById('l').value
-        document.getElementById('r2').innerHTML = document.getElementById('d').value
-        document.getElementById('r3').innerHTML = document.getElementById('e').value
-        document.getElementById('r4').innerHTML = document.getElementById('p').value
+            document.getElementById('r7').innerHTML = ""
+            document.getElementById('r8').innerHTML = ""            
+            document.getElementById('r9').innerHTML = ""
+            document.getElementById('r10').innerHTML = ""
+        document.getElementById('r').inerHTML = document.getElementById('f').value  
+        document.getElementById('r1').innerHTML = document.getElementById('l').value 
+        document.getElementById('r2').innerHTML = document.getElementById('d').value 
+        document.getElementById('r3').innerHTML = document.getElementById('e').value 
+        document.getElementById('r4').innerHTML = document.getElementById('p').value 
         document.getElementById('r5').innerHTML = document.getElementById('u').value
         document.getElementById('r6').innerHTML = document.getElementById('g').value
-        }
-    
+        
+       if( document.getElementById('c').checked ){
+            document.getElementById('r7').innerHTML = document.getElementById('c').value
+       }  
+       if( document.getElementById('v').checked ){
+            document.getElementById('r8').innerHTML = document.getElementById('v').value
+       }  
+       if( document.getElementById('b').checked ){
+            document.getElementById('r9').innerHTML = document.getElementById('b').value
+       }  
+       if( document.getElementById('r').checked ){
+            document.getElementById('r10').innerHTML = document.getElementById('r').value
+       }  
+    }
     </script>
     
 </body>

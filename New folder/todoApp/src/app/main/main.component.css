@@ -1,0 +1,15 @@
+.sign>div{
+    display: flex;
+    color: #222;
+    font-size: 20px;
+    background-color: azure;
+
+
+}
+.btn{
+    margin-left: 15px;
+}
+
+label{
+    min-width: 10%;
+}
